@@ -1,0 +1,26 @@
+{
+  "name": "react_project",
+  "version": "1.0.0",
+  "description": "React app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Camiloco345/React_project_1.git"
+  },
+  "keywords": [
+    "JavaScrpt",
+    "webpack",
+    "css",
+    "HTML",
+    "React"
+  ],
+  "author": "CAmilo ovalle",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Camiloco345/React_project_1/issues"
+  },
+  "homepage": "https://github.com/Camiloco345/React_project_1#readme"
+}
