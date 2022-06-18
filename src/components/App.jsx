@@ -2,9 +2,7 @@ import React from 'react';
 
 const App = () => {
     return (
-        <div>
-            Hola mundo
-        </div>
+        <h1>Hello world , vienvenidos al curso de React</h1>
     );
 };
 
