@@ -1,6 +1,8 @@
 const { plugins } = require('@babel/preset-env/lib/plugins-compat-data');
 const path = require('path');
 const htmlWebpackPlugin = require('html-webpack-plugin');
+const miniCssExtractPlugin = require('mini-css-extract-plugin');
+
 
 module.exports = {
     entry: './src/index.js',
@@ -15,6 +17,8 @@ module.exports = {
         extensions: ['.js', '.jsx']
     },
 
+
+//Modules Section    
     module: {
         rules: [
             {
@@ -32,14 +36,35 @@ module.exports = {
                 }
             ]
             },
+            {
+                test: /\.css|scss$/,
+                use:[
+                    "style-loader",
+                    "css-loader",
+                    "sass-loader",
+                ]
+            }
         ]
     },
+
+//Plugins section    
     plugins:[
         new htmlWebpackPlugin({
             template: './public/index.html',
             filename: './index.html',
-        })
-        ]
-        
+        }),
+        new miniCssExtractPlugin({
+            filename: '[name].css',
+        }),
+        ],
+
+//DevServer Section        
+        devServer:{
+            static: {
+                directory: path.join(__dirname, 'public'),
+                },
+              compress: true,
+              port: 3005,
+            }        
     
 }

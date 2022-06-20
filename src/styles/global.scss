@@ -1,0 +1,9 @@
+$base-color: aqua;
+$color: rgba(black, 0.88);
+
+/* Setting the background color, color, and font family of the body. */
+body{
+    background-color: $base-color;
+    color: $color;
+    font-family: 'Courier New', Courier, monospace;
+}
