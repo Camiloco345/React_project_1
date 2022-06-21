@@ -1,10 +1,15 @@
 import React from 'react';
+import Login from '../containers/Login';
 import '../styles/global.css';
+import Layout from '../containers/Layout';
 
 const App = () => {
-    return (
-        <h1>Hello world </h1>
-    );
+    return(
+       <Layout> 
+         <Login/>
+       </Layout>  
+    )
+   
 };
 
 export default App;

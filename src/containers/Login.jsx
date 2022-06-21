@@ -2,6 +2,12 @@ import React from 'react'
 import '../styles/Login.scss';
 import '../styles/global.css'
 
+/**
+ * It returns a div with a class of login, which contains a div with a class of form-container, which
+ * contains an image, a h1, a p, and a form, which contains a label, an input, a label, an input, and
+ * an input
+ * @returns A div with a class of login.
+ */
 const Login = () => {
     return (
         <div className="login">
