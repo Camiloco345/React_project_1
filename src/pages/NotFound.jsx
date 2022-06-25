@@ -7,7 +7,7 @@ const NotFound = () => {
         <div className='container'>
             <div className="notFound">
                 NOT FOUND
-                <img className="ico" src="../assets/icons/error-404.png" />
+                <img className="ico" src="https://cdn-icons-png.flaticon.com/512/1548/1548682.png" />
             </div>
         </div>
         

@@ -1,16 +1,10 @@
 import React from 'react'
-import '../styles/Login.scss';
+import '../styles/CreatePassword.scss';
 import '../styles/global.css'
 
-/**
- * It returns a div with a class of login, which contains a div with a class of form-container, which
- * contains an image, a h1, a p, and a form, which contains a label, an input, a label, an input, and
- * an input
- * @returns A div with a class of login.
- */
-const Login = () => {
-    return (
-        <div className="login">
+const CreatePassword = () => {
+  return (
+    <div className="login">
     <div className="form-container">
       <img src="./logos/logo_yard_sale.svg" alt="logo" className="logo" />
 
@@ -28,8 +22,7 @@ const Login = () => {
       </form>
     </div>
   </div>
-    );
+  );
 }
 
-export default Login;
-
+export default CreatePassword;
