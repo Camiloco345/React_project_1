@@ -9,6 +9,8 @@ import {BrowserRouter, Routes, Route } from 'react-router-dom';
 import Header from '../components/Header';
 import Login from '../pages/Login';
 import CreateAccount from '../pages/CreateAccount';
+import EditAccount from '../pages/EditAccount';
+import EmailSent from '../pages/EmailSent';
 
 
 const App = () => {
@@ -22,6 +24,8 @@ const App = () => {
             <Route exact path='/CreatePassword' element={<CreatePassword/>} />
             <Route exact path='/recoveryPassword' element={<RecoveryPassword/>} />
             <Route exact path='/CreateAccount' element={<CreateAccount/>} />
+            <Route exact path='/EditAccount' element={<EditAccount/>} />
+            <Route exact path='/EmailSent' element={<EmailSent/>} />
             <Route path='*' element={<NotFound/>} /> 
           </Routes>
         </Layout>
