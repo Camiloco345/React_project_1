@@ -1,7 +1,7 @@
 import React from 'react';
 import '../styles/Home.scss'
 
-const menuIcon = '@icons/bt_add_to_cart.svg'
+import menuIcon from '@icons/bt_add_to_cart.svg'
 
 const Home = () => {
     return (

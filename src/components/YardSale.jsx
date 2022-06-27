@@ -1,9 +1,9 @@
 import React from "react";
 import '../styles/global.css';
 import '../styles/YardSale.scss';
-import logo from '../assets/logos/logo_yard_sale.svg'
-import menuIcon from '../assets/icons/icon_menu.svg'
-import cart from '../assets/icons/icon_shopping_cart.svg'
+import logo from '@logos/logo_yard_sale.svg'
+import menuIcon from '@icons/icon_menu.svg'
+import cart from '@icons/icon_shopping_cart.svg'
 
 const YardSale = () => {
   return (
@@ -24,7 +24,7 @@ const YardSale = () => {
             <a href="/">Electronics</a>
           </li>
           <li>
-            <a href="/">Furnitures</a>
+            <a href="/">Furniture</a>
           </li>
           <li>
             <a href="/">Toys</a>

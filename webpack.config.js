@@ -50,8 +50,12 @@ module.exports = {
                 ]
             },
             {
-                test: /\.(png|svg|jgp)$/,
-                type: 'asset'
+                test: /\.(png|jp(e*)g|svg|gif)$/,
+                use: [
+                    {
+                        loader: 'file-loader'
+                    }
+                ]
             }
         ]
     },
