@@ -6,7 +6,7 @@ import Home from '../pages/Home';
 import NotFound from '../pages/NotFound';
 import RecoveryPassword from '../pages/RecoveryPassword';
 import {BrowserRouter, Routes, Route } from 'react-router-dom';
-import Header from '../components/Header';
+import YardSale from '../components/YardSale';
 import Login from '../pages/Login';
 import CreateAccount from '../pages/CreateAccount';
 import EditAccount from '../pages/EditAccount';
@@ -17,7 +17,7 @@ const App = () => {
     return(
       <BrowserRouter>
         <Layout>
-          <Header/>
+          <YardSale />
           <Routes>
             <Route exact path='/' element={<Home/>} />
             <Route exact path='/Login' element={<Login/>} />

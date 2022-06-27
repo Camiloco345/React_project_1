@@ -1,14 +1,17 @@
 import React from "react";
-import '../styles/global.css'
-import '../styles/YardSale.scss'
+import '../styles/global.css';
+import '../styles/YardSale.scss';
+import logo from '../assets/logos/logo_yard_sale.svg'
+import menuIcon from '../assets/icons/icon_menu.svg'
+import cart from '../assets/icons/icon_shopping_cart.svg'
 
 const YardSale = () => {
   return (
     <nav>
-      <img src="./icons/icon_menu.svg" alt="menu" className="menu" />
+      <img src={menuIcon} alt="menu" className="menu" />
 
       <div className="navbar-left">
-        <img src="./logos/logo_yard_sale.svg" alt="logo" className="logo" />
+        <img src={logo} alt="logo" className="nav-logo" />
 
         <ul>
           <li>
@@ -36,7 +39,7 @@ const YardSale = () => {
         <ul>
           <li className="navbar-email">platzi@example.com</li>
           <li className="navbar-shopping-cart">
-            <img src="./icons/icon_shopping_cart.svg" alt="shopping cart" />
+            <img src={cart} alt="shopping cart" />
             <div>2</div>
           </li>
         </ul>

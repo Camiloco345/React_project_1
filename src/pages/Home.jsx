@@ -1,6 +1,8 @@
 import React from 'react';
 import '../styles/Home.scss'
 
+const menuIcon = '@icons/bt_add_to_cart.svg'
+
 const Home = () => {
     return (
         <section className="main-container">
@@ -14,12 +16,12 @@ const Home = () => {
                 <p>Bike</p>
               </div>
               <figure>
-                <img src="./icons/bt_add_to_cart.svg" alt="" />
+                <img src={menuIcon} alt="" />
               </figure>
             </div>
           </div>
     
-          <div className="product-card">
+          {/* <div className="product-card">
             <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt=""/>
             <div className="product-info">
               <div>
@@ -121,7 +123,7 @@ const Home = () => {
                 <img src="./icons/bt_add_to_cart.svg" alt="" />
               </figure>
             </div>
-          </div>
+          </div> */}
         </div>
       </section>
     );

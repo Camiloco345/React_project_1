@@ -15,7 +15,11 @@ module.exports = {
     mode: 'development',
 
     resolve: {
-        extensions: ['.js', '.jsx']
+        extensions: ['.js', '.jsx'],
+        alias: {
+            '@icons': path.resolve(__dirname, 'src/assets/icons/'),
+            '@logos': path.resolve(__dirname, 'src/assets/logos/')            
+        }
     },
 
 
@@ -46,8 +50,8 @@ module.exports = {
                 ]
             },
             {
-                test: /\.png|.jpg$/,
-                type: 'assets/resource'
+                test: /\.(png|svg|jgp)$/,
+                type: 'asset'
             }
         ]
     },
