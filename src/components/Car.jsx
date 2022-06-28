@@ -1,12 +1,14 @@
 import React from 'react';
 import '../styles/global.css';
 import '../styles/Car.scss';
+import flechas from '@icons/flechita.svg';
+import close from '@icons/icon_close.png'
 
 const Car = () => {
     return (
       <aside className="product-detail">
         <div className="title-container">
-          <img src="./icons/flechita.svg" alt="arrow" />
+          <img src={flechas} alt="arrow" />
           <p className="title">My order</p>
         </div>
 
@@ -20,7 +22,7 @@ const Car = () => {
             </figure>
             <p>Bike</p>
             <p>$30,00</p>
-            <img src="./icons/icon_close.png" alt="close" />
+            <img src={close} alt="close" />
           </div>
 
           <div className="shopping-cart">
@@ -32,7 +34,7 @@ const Car = () => {
             </figure>
             <p>Bike</p>
             <p>$30,00</p>
-            <img src="./icons/icon_close.png" alt="close" />
+            <img src={close} alt="close" />
           </div>
 
           <div className="shopping-cart">
@@ -44,7 +46,7 @@ const Car = () => {
             </figure>
             <p>Bike</p>
             <p>$30,00</p>
-            <img src="./icons/icon_close.png" alt="close" />
+            <img src={close} alt="close" />
           </div>
 
           <div className="order">
