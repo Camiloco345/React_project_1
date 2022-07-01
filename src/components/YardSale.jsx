@@ -1,11 +1,20 @@
-import React from "react";
+import React, {useState} from "react";
 import '../styles/global.css';
 import '../styles/YardSale.scss';
+import MiniMenu from "../components/MiniMenu.jsx";
 import logo from '@logos/logo_yard_sale.svg'
 import menuIcon from '@icons/icon_menu.svg'
 import cart from '@icons/icon_shopping_cart.svg'
 
 const YardSale = () => {
+
+  const [toggle, setToggle] = useState(false);
+
+  const handleToggle = () => {
+    setToggle(!toggle)
+    
+  } 
+
   return (
     <nav>
       <img src={menuIcon} alt="menu" className="menu" />
@@ -37,13 +46,18 @@ const YardSale = () => {
 
       <div className="navbar-right">
         <ul>
-          <li className="navbar-email">platzi@example.com</li>
+          <li className="navbar-email" onClick={handleToggle}>
+            platzi@example.com
+          </li>
           <li className="navbar-shopping-cart">
             <img src={cart} alt="shopping cart" />
             <div>2</div>
           </li>
         </ul>
       </div>
+      {
+        toggle && <MiniMenu></MiniMenu>
+      }
     </nav>
   );
 };
