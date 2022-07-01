@@ -1,14 +1,14 @@
 import React from 'react';
 import '../styles/global.css';
 import '../styles/Car.scss';
-import flechas from '@icons/flechita.svg';
+import arrows from '@icons/flechita.svg';
 import close from '@icons/icon_close.png'
 
 const Car = () => {
     return (
       <aside className="product-detail">
         <div className="title-container">
-          <img src={flechas} alt="arrow" />
+          <img src={arrows} alt="arrow" />
           <p className="title">My order</p>
         </div>
 
