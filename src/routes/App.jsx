@@ -11,6 +11,7 @@ import Login from '../pages/Login';
 import CreateAccount from '../pages/CreateAccount';
 import EditAccount from '../pages/EditAccount';
 import EmailSent from '../pages/EmailSent';
+import ProductList from '../containers/ProductList';
 
 
 const App = () => {
@@ -19,7 +20,7 @@ const App = () => {
         <Layout>
           <YardSale />
           <Routes>
-            <Route exact path='/' element={<Home/>} />
+            <Route exact path='/' element={<ProductList/>} />
             <Route exact path='/Login' element={<Login/>} />
             <Route exact path='/CreatePassword' element={<CreatePassword/>} />
             <Route exact path='/recoveryPassword' element={<RecoveryPassword/>} />

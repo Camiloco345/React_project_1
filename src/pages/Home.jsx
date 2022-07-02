@@ -1,20 +1,16 @@
 import React, {useState} from 'react';
 import '../styles/Home.scss'
-
 import menuIcon from '@icons/bt_add_to_cart.svg'
 
 const Home = () => {
 
-    const [cart, setCart] = useState('');
+    const [cart, setCart] = useState([]);
     /**
      * It sets the state of cart to 'Hello world' and then after 1 second it sets the state of cart to
      * an empty string.
      */
     const handleClick =()=>{
-      setCart('Hello world');
-      setTimeout(() => {
-        setCart('');;
-      }, 1000);
+      setCart([]);
     }
     return (
         <section className="main-container">
@@ -30,7 +26,6 @@ const Home = () => {
               <figure onClick={handleClick} >
                 <img src={menuIcon} alt="" />
               </figure>
-              {cart}
             </div>
           </div>
     
