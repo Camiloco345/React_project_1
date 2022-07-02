@@ -55,7 +55,9 @@ const YardSale = () => {
           </li>
         </ul>
       </div>
-      {
+    
+      { 
+      /* It's a conditional rendering. If toggle is true, it will render the MiniMenu component. */
         toggle && <MiniMenu></MiniMenu>
       }
     </nav>
