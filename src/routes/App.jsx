@@ -12,10 +12,14 @@ import CreateAccount from '../pages/CreateAccount';
 import EditAccount from '../pages/EditAccount';
 import EmailSent from '../pages/EmailSent';
 import ProductList from '../containers/ProductList';
+import AppContext from '../context/AppContext.js'
+import useInitialState from '../hooks/useInitialState.js';
 
 
 const App = () => {
+    const initialState = useInitialState();
     return(
+      <AppContext.Provider value={initialState}>
       <BrowserRouter>
         <Layout>
           <YardSale />
@@ -31,6 +35,7 @@ const App = () => {
           </Routes>
         </Layout>
       </BrowserRouter>
+      </AppContext.Provider>
     )
 };
 
