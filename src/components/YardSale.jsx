@@ -2,6 +2,7 @@ import React, {useState, useContext} from "react";
 import '../styles/global.css';
 import '../styles/YardSale.scss';
 import MiniMenu from "../components/MiniMenu.jsx";
+import Orders from '../components/Orders.jsx'
 import logo from '@logos/logo_yard_sale.svg'
 import menuIcon from '@icons/icon_menu.svg'
 import cart from '@icons/icon_shopping_cart.svg'
@@ -13,6 +14,7 @@ import AppContext from '../context/AppContext.js'
 const YardSale = () => {
 
   const [toggle, setToggle] = useState(false);
+  const [toggleOrder, setToggleOrder] = useState(false);
   const {state} = useContext(AppContext);
 
   const handleToggle = () => {
@@ -54,17 +56,15 @@ const YardSale = () => {
           <li className="navbar-email" onClick={handleToggle}>
             platzi@example.com
           </li>
-          <li className="navbar-shopping-cart">
+          <li className="navbar-shopping-cart" onClick={()=>{setToggleOrder(!toggleOrder)}}>
             <img src={cart} alt="shopping cart" />
             {state.cart.length > 0 ? <div>{state.cart.length}</div> : null }
           </li>
         </ul>
       </div>
     
-      { 
-      /* It's a conditional rendering. If toggle is true, it will render the MiniMenu component. */
-        toggle && <MiniMenu></MiniMenu>
-      }
+      {toggle && <MiniMenu />}
+      {toggleOrder && <Orders />}
     </nav>
   );
 };

@@ -2,7 +2,6 @@ import React from 'react';
 import CreatePassword from '../pages/CreatePassword';
 import '../styles/global.css';
 import Layout from '../containers/Layout';
-import Home from '../pages/Home';
 import NotFound from '../pages/NotFound';
 import RecoveryPassword from '../pages/RecoveryPassword';
 import {BrowserRouter, Routes, Route } from 'react-router-dom';
