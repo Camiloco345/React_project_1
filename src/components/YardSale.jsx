@@ -2,7 +2,7 @@ import React, {useState, useContext} from "react";
 import '../styles/global.css';
 import '../styles/YardSale.scss';
 import MiniMenu from "../components/MiniMenu.jsx";
-import Orders from '../components/Orders.jsx'
+import Orders from '../containers/Orders.jsx'
 import logo from '@logos/logo_yard_sale.svg'
 import menuIcon from '@icons/icon_menu.svg'
 import cart from '@icons/icon_shopping_cart.svg'
